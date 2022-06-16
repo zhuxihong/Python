@@ -115,14 +115,14 @@ class taobao:
                         pass
                     if a != "":     #检测到确认支付按钮，输入密码
                         k=PyKeyboard()#构建键盘对象
-                        k.type_string("230518") #输入密码
+                        k.type_string("") #输入密码
                         break
                 real_Click('//*[@id="J_authSubmit"]')
 if __name__=='__main__':
     browser = create_browser() #构建浏览器对象
     taobao = taobao()       #构建淘宝类
     # 设置使用的淘宝账号
-    taobao.zhanghao = 'asd13480594762'
+    taobao.zhanghao = ''
     taobao.qianggoutime='2022-06-17 19:30:00'
     # 检验登录状态
     try:
